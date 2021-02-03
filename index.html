@@ -1,10 +1,239 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Tactile Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tactile Works">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- フォントの使用準備 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;600&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <p>hello!world</p>
+
+    <header>
+        <div class="logo-area">
+
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Tactile Worksのホームページ" class="logo">
+                </a>
+            </div>
+
+
+            <div class="logo-title">
+                <a href="index.html" class="logo-area-a">
+                    <h1>Tactile Works</h1>
+                </a>
+            </div>
+            <div class="logo-form">
+                <form action="" id="form">
+                    <select name="slect">
+                        <option value="index.html" selected>日本語</option>
+                        <option value="index-en.html">English</option>
+                        <option value="index-zh.html">中文</option>
+                    </select>
+                </form>
+            </div>
+
+
+
+        </div>
+        <div class="menu-area">
+            <ul>
+                <li><a href="index.html" class="menu-area-a">HOME</a></li>
+                <li><a href="works.html" class="menu-area-a">WORKS</a></li>
+                <li><a href="price.html" class="menu-area-a">PRICE</a></li>
+                <li><a href="contact.html" class="menu-area-a">CONTACT</a></li>
+               <!-- <li><a href="news.html" class="menu-area-a">NEWS</a></li>-->
+
+            </ul>
+        </div>
+        <div id="header_sp">
+            <nav id="checkbox_sp">
+                <input type="checkbox" id="check">
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+                <label for="check"></label>
+                <label class="label2"></label>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="works.html">Works</a></li>
+                  <!--  <li><a href="news.html">News</a></li> -->
+
+                    <li><a href="price.html">Price</a></li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <!-- メイン画像部分 -->
+        <div class="big-bg">
+
+            <img src="images/main-bg.jpg" alt="main-bg">
+            <h2 class="ja-midashi">「こころに届く」映像を、お作りします。</h2>
+            
+            <!--
+            <h2>We'll shoot ...not just a movie,
+        <br>but just your own story.</h2>
+-->
+
+        </div>
+
+    </header>
+    <div id="home">
+
+    <main class="wrapper">
+        <div class="wrapper">
+            <h3 class="aboutus jetbrains-font pt-10 wrapper">About us</h3>
+            <p class="common-p t-a-left wrapper mb-50">私たち<span class="jetbrains-font">Tactile Works</span>は、関西エリアに拠点をおく映像制作スタジオです。<br>
+                日本全国の企業様のPR動画やCM作成にはじまり、個人様のYouTubeのプロデュースに至るまで、幅広く活動をさせて頂いております。<br>また、近年ではオンライン会議を始められたい会社様へのサポートサービスや、オンラインでの結婚式を挙式から撮影まで一貫して行うサービスもご好評頂いております。<br>
+                幅広い知識と専門性を持ったプロたちが、皆様の「伝えたいメッセージ」を実際の映像にさせて頂きます。<br>
+                ぜひお気軽に下記お問合せフォームまたはお電話やメールにてご連絡ください。</p>
+        
+
+        <!-- youtube貼り付け -->
+       
+            <h3 class="aboutus2 jetbrains-font pt-60 wrapper">Our works</h3>
+            <p class="common-p t-a-left wrapper mb-30">当スタジオにて製作いたしました作例をご覧ください。丁寧な打ち合せをさせて頂くことで、お客様のご希望をお好きなテイストにて映像にさせて頂きます。</p>
+
+            <div class="grid-container-works">
+                <div class="item-works text-black">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uL3SWSm97-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="t-a-center">株式会社ABC様「商品名」</p>
+                </div>
+                <div class="item-works text-black">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uL3SWSm97-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="t-a-center">株式会社ABC様「商品名」</p>
+                </div>
+                <div class="item-works text-black">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uL3SWSm97-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="t-a-center">株式会社ABC様「商品名」</p>
+                </div>
+
+            </div>
+            <div id="to-workbutton-area02">
+                <p><a href="works.html" class="to-works-button02 b-01">他の作例はこちら >>
+                    </a></p>
+            </div>
+
+        </div>
+
+
+
+
+        <form id="formarea wrapper">
+            <div class="wrapper04">
+            <h3 class="contactus jetbrains-font pt-30 ">Contact</h3>
+
+            <div class="formarea01">
+                <p class="formarea-a">
+                    <label for="mailadress ">メールアドレス</label>
+                    <input type="email" id="mailadress" class="email-fix">
+                </p>
+
+                <p class="formarea-a"><label for="textbox">お問合せ</label>
+                </p>
+
+                <textarea class="textarea-fix" name="message" placeholder="メッセージを入力" id="textbox"></textarea>
+
+            </div>
+            <div>
+                <input type="submit" value="送信する" class="intro-button02 b-01">
+            </div>
+            </div>
+        </form>
+
+        <div id="phone-area" class="wrapper">
+            <!-- About us -->
+            <p class="phone"><i class="fas fa-phone-volume fa-lg fa-fw text-black"></i>06-0000-0000</p>
+            <p class="mail"><a href="contact.html">
+                <i class="fas fa-envelope fa-fw text-black"></i>tactileworks12345@gmail.com</a>
+            </p>
+
+            <p class="common-p t-a-left m-50-0 p-30-0 wrapper">
+                当スタジオでは、instagramやtwitterもさせて頂いております。
+                下のアイコンをクリックして、こちらもぜひご覧いただければ幸いです。↓↓↓</p>
+
+            <div id="icon-area">
+
+                <div class="sub-title text-pink"><a href="https://www.facebook.com/facebook"><i class="fab fa-facebook-square f-w-18 text-pink">Facebook</i></a>
+                </div>
+                <div class="sub-title text-pink"><a href="https://twitter.com/webcreatorbox?ref_src=twsrc%5Etfw"><i class="fab fa-twitter f-w-18 text-pink">Twitter</i></a></div>
+
+                <div class="sub-title text-pink"><a href="https://www.youtube.com/embed/Hks1M9RvRps?start=33"><i class="fab fa-youtube f-w-18 text-pink">Youtube</i></a></div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+
+</div>
+
+
+
+    <footer id="footer-container">
+
+        <ul>
+            <li><a href="index.html" class="footer-a">HOME</a></li>
+           <!-- <li><a href="news.html" class="footer-a">NEWS</a></li> -->
+            <li><a href="works.html" class="footer-a">WORKS</a></li>
+            <li><a href="price.html" class="footer-a">PRICE</a></li>
+            <li><a href="contact.html" class="footer-a">CONTACT</a></li>
+
+        </ul>
+        <div class="footer-copy wrapper">
+            <small>&copy; 2020 Tactile Works</small>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        'use strict';
+        $(function() {
+            var h1 = $('h2');
+
+            var txt_array = h1.text().split('');
+
+            $('h2').html('');
+
+            $.each(txt_array, function(index, element) {
+                var new_element = $("<span/>").text(element).css({
+                    opacity: 0
+                });
+                h1.append(new_element);
+                new_element.delay(index * 50);
+                new_element.animate({
+                    opacity: 1
+                }, 2000);
+            });
+        });
+        
+        
+        
+    </script>
 </body>
+
 </html>
